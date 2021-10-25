@@ -7,7 +7,7 @@ const app = new App({
     appToken: process.env.APP_TOKEN
   });
 
-app.command("/help", async ({ command, ack, say }) => {
+app.command("help", async ({ command, ack, say }) => {
     try {
       await ack();
       say("du får ingen hjälp");
