@@ -4,8 +4,6 @@ require("dotenv").config();
 const app = new App({
     token: process.env.SLACK_BOT_TOKEN,
     signingSecret: process.env.SLACK_SIGNING_SECRET,
-    socketMode:true, // enable the following to use socket mode
-    url: 'https://secret-journey-00532.herokuapp.com/',
     appToken: process.env.APP_TOKEN
   });
 
